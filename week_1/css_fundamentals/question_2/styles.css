@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box {
+    background-color: rgb(29, 27, 27);
+    width: calc(30% - 10px);
+    margin: 6px;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 99%;
+    margin: auto;
+    display: block;
+    height: auto;
+    border-radius: 6px;
+}
+
+.box footer {
+    margin-top: 10px;
+}
+
+p{
+    margin-left:5px;
+}
+
+footer{
+    margin-left:5px;
+}
