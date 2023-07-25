@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.MainHead{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 15px 0 ;
+    color: blue;
+    font-size: xx-large;
+    font-weight: bolder;
+ }
+
+.SecondHead{
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+}
+
+.awards {
+    display: flex;
+    justify-content: center;
+}
