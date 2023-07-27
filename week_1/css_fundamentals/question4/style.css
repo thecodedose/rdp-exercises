@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+ font-weight: 800;
+ font-size: 4rem;
+ letter-spacing: 0.3rem;
+ 
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    bottom: 20px;
+}
+.subtitle span{
+    display: block;
+}
+.tag{
+    position: relative;
+    bottom: 30px;
+    transform: rotate(-10deg);
+    left: 140px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    background-color: gold;
+    padding: 0.8rem 1.4rem;
+    border-radius: 5px;
+}
+@media (max-width: 400px)
+{
+    .title{
+        font-size: 3rem;
+    }
+    .tag{
+        left: 120px;
+        bottom: 30px;
+        padding : 0.8rem 1.2rem;
+    }
+}
