@@ -66,6 +66,11 @@ main{
     display: flex;
     gap: 5px
 }
+@media (max-width: 879.99px) {
+    .card {
+        max-width: 37rem;
+    }
+}
 @media (max-width: 450px)
 {
     .card--content h2 {
