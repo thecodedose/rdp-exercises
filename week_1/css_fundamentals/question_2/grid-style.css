@@ -5,16 +5,10 @@ body {
 
 .container {
     display: grid;
-    grid-gap: 12px;
-    width: 90%;
-    justify-content: center;
-    margin: auto;
-}
-
-.row {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    width: 90%;
+    margin: auto;
 }
 
 .box {
@@ -23,8 +17,6 @@ body {
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px;
-    display: grid;
-    grid-gap: 10px;
     justify-items: start;
     align-items: start;
 }

@@ -1,8 +1,5 @@
 body {
     background-color: black;
-    display: flex;
-    flex-wrap: flex;
-    justify-content: space-around;
     padding: 20px;
 }
 
@@ -35,10 +32,10 @@ body {
     margin-top: 10px;
 }
 
-p{
-    margin-left:5px;
+p {
+    margin-left: 5px;
 }
 
-footer{
-    margin-left:5px;
+footer {
+    margin-left: 5px;
 }
