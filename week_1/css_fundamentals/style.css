@@ -1,25 +1,38 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.MainHead{
+.container {
     display: flex;
-    justify-content: center;
-    margin: 40px 0 15px 0 ;
-    color: blue;
-    font-size: xx-large;
-    font-weight: bolder;
- }
-
-.SecondHead{
-    display: flex;
-    justify-content: center;
-    font-size: x-small;
+    flex-direction: column;
+    align-items: center;
 }
 
-.awards {
-    display: flex;
-    justify-content: center;
+.main-head {
+    margin: 40px 0 15px 0;
+    color: blue;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.main-head-container {
+    position: relative;
+}
+
+.cool-sites {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-15deg);
+    background-color: rgb(255, 208, 0);
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.second-head {
+    font-size: small;
+    text-align: center;
 }
