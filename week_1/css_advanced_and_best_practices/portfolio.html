@@ -7,54 +7,54 @@
   <link rel="stylesheet" href="portfolio-styles.css">
 </head>
 <body>
-  <header>
-    <h1>Graphic Designer Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <h1 class="header__title">Graphic Designer Portfolio</h1>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="list__item"><a href="#about" class="item__link">About</a></li>
+        <li class="list__item"><a href="#portfolio" class="item__link">Portfolio</a></li>
+        <li class="list__item"><a href="#contact" class="item__link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate graphic designer with a keen eye for detail and a love for creating visually stunning designs. My goal is to bring ideas to life through innovative and creative design solutions.</p>
+  <main class="main">
+    <section id="about" class="main__about">
+      <h2 class="about__title">About Me</h2>
+      <p class="about__description">I am a passionate graphic designer with a keen eye for detail and a love for creating visually stunning designs. My goal is to bring ideas to life through innovative and creative design solutions.</p>
     </section>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>Description of the project goes here...</p>
+    <section id="portfolio" class="main__portfolio">
+      <h2 class="portfolio__title">Portfolio</h2>
+      <div class="portfolio__project project">
+        <img src="project1.jpg" alt="Project 1" class="project__image">
+        <h3 class="project__heading">Project 1</h3>
+        <p class="project__description">Description of the project goes here...</p>
       </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Description of the project goes here...</p>
+      <div class="portfolio__project project">
+        <img src="project2.jpg" alt="Project 2" class="project__image">
+        <h3 class="project__heading">Project 2</h3>
+        <p class="project__description">Description of the project goes here...</p>
       </div>
       <!-- Add more projects here -->
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
+    <section id="contact" class="main__contact">
+      <h2 class="contact__title">Contact Me</h2>
+      <form class="contact__form">
+        <label for="name" class="form__label">Name:</label>
+        <input type="text" id="name" name="name" required class="form__input">
+        <label for="email" class="form__label">Email:</label>
+        <input type="email" id="email" name="email" required class="form__input">
+        <label for="message" class="form__label">Message:</label>
+        <textarea id="message" name="message" rows="4" required class="form__textarea"></textarea>
+        <button type="submit" class="form__button">Send Message</button>
       </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
   </footer>
 </body>
 </html>
