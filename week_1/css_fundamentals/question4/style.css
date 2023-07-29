@@ -2,10 +2,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -20,15 +22,18 @@ main{
  letter-spacing: 0.3rem;
  
 }
+
 .subtitle{
     font-weight: 500;
     font-size: 1rem;
     position: relative;
     bottom: 20px;
 }
+
 .subtitle span{
     display: block;
 }
+
 .tag{
     position: relative;
     bottom: 30px;
@@ -40,6 +45,7 @@ main{
     padding: 0.8rem 1.4rem;
     border-radius: 5px;
 }
+
 @media (max-width: 400px)
 {
     .title{

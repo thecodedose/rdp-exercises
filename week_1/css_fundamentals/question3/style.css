@@ -2,20 +2,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     min-height: 100vh;
 }
+
 main{
     display: grid;
     place-content: center;
     padding: 1rem;
     gap: 1rem;
 }
+
 table{
     border: 1px solid black;
 }
+
 th, td{
     border: 1px solid black;
+}
+
+p {
+    text-align: center;
 }
 
 .table{
@@ -24,20 +32,22 @@ th, td{
     border-spacing: 2px;
     border-collapse: separate;
 }
+
 .table--body{
     display: table-row-group;
 }
+
 .table--row{
     display: table-row;
 }
+
 .table--data{
     display: table-cell;
     border: 1px solid black;
     text-align: center;
 }
+
 .th{
     font-weight: bold;
 }
-p{
-    text-align: center;
-}
+
