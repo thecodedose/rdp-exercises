@@ -1,0 +1,7 @@
+$font-stack: Arial, sans-serif;
+$primary-color: #333;
+
+@mixin bg-color($color: #333, $mb: 1rem)    {
+    color: $color;
+    margin-bottom: $mb;
+}
