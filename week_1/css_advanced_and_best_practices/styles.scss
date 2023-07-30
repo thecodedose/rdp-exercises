@@ -1,0 +1,125 @@
+// Variables
+$font-stack: Arial, sans-serif;
+$primary-color: #333;
+$secondary-color: #fff;
+$text-color: #555;
+$button-color: #e74c3c;
+$button-hover-color: #c0392b;
+$border-color: #ccc;
+$border-radius: 5px;
+
+// Mixins
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+html, body, header, main, section, footer {
+  @include reset-margin-padding;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1rem;
+  text-align: center;
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+nav {
+  ul {
+    @include reset-margin-padding;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+  
+  h2 {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+  
+  .project {
+    margin-bottom: 2rem;
+    
+    img {
+      @include size(100%);
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+form {
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
+  
+  input,
+  textarea {
+    @include size(100%);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: $button-color;
+    color: $secondary-color;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
