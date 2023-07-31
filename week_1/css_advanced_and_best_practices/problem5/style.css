@@ -14,9 +14,9 @@ html, body {
   overflow-x: hidden;
 }
 
-div {
+/* div {
   position: relative;
-}
+} */
 
 .grid {
   width: 80%;
@@ -24,7 +24,7 @@ div {
   justify-content: center;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* grid-template-rows: 1fr 1.2fr; */
+  grid-template-rows: 1fr 1.05fr;
   gap: 10px;
   padding: 10px;
 }
@@ -65,59 +65,113 @@ h1 {
   background-color: white;
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid__calc-container {
-  border: 1px solid black;
+  /* border: 1px solid red; */
   width: 85%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+} 
 
 .grid__calc-header {
-  border: 1px solid black;
-  
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid__calc-header h3 {
+  width: fit-content;
+  font-size: 2vw;
+  font-weight: 500;
 }
 
 #dropdown {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  height: 100%;
-  border-radius: 1.5vh;
+  height: 3.5vh;
+  border: 2px solid ;
+  border-radius: 1.6vh;
   background-color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.1vw;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
   font-weight: 500;
 }
 
 .grid__calc-form {
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-wrapper {
-  position: relative;
-  border: 1px solid black;
-  width: 100%;
+  margin-top: 4%;
+  /* border: 1px solid #424141; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 25px;
 }
 
-/* Adjust the input box styles as needed
 input[type="number"] {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  /* // @urvashi, any other property to remove arrows from number input box, bottom properties are deprecated */
+  
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #424141;
-  border-radius: 5px;
-} */
+  height: 6.5vh;
+  padding: 0 20px;
+  border: 0;
+  /* border: 1px solid #424141; */
+  background-color: rgb(236, 234, 234);
+  border-radius: 1vw;
+}
+
+.grid__calc-form-time-period-container {
+  
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.grid__calc-form-time-period-container h5 {
+  
+  display: inline-flex;
+  color: #767575;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.grid__calc-form-time-period-container span {
+  font-size: 1vw;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+}
+
+.light-green-bar-container {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  top: 65%;
+  border-radius: 2vh;
+  background-color: #D5F033;
+}
+
+.dark-green-bar {
+  width: 15%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 2vh;
+}
+
 
 .grid__payment {
   border-radius: 4vw;
@@ -126,12 +180,12 @@ input[type="number"] {
   grid-row: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .flex-container {
   /* border: 1px solid black; */
   width: 100%;
-  margin: 15% 0;
 }
 
 .flex-container h2 {
@@ -149,36 +203,64 @@ input[type="number"] {
 }
 
 .flex-container p {
-  position: relative;
   font-size: 1vw;
   width: 70%;
   margin: 0 auto;
-  top: -1vh;
 }
 
 .payment-plans {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 70%;
-  height: 10vh;
+  height: 8vh;
   margin: 15px auto;
   border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  position: relative;
 }
 
 .plan-1 {
   background-color: white;
+  color: #000000;
 }
 
 .plan-2 {
   background-color: black;
+  color: #D5F033;
 }
 
-.grid div {
-  display: block;
+.price {
+  font-size: 4vh;
+  font-weight: 900;
+  text-decoration: line-through;
+
 }
+
+.month {
+  color: #767575;
+  font-size: 1.4vw;
+  margin-top: 5%;
+}
+
+sup {
+  font-size: 1.8vw;
+  font-weight: 900;
+  position: relative;
+  top: -10%;
+}
+
+/* .grid div {
+  display: block;
+} */
 
 .grid__button-container {
   /* border: 1px solid black; */
   width: 75%;
   display: flex;
+  flex-direction: row;
+  
   margin: 0 auto;
   justify-content: center;
   gap: 20px;
@@ -188,6 +270,7 @@ input[type="number"] {
 .button {
   font-size: 1.3vw;
   width: fit-content;
+  text-align: center;
   padding: 10px;
   border-radius: 20vw;
   background-color: white;
@@ -197,6 +280,10 @@ input[type="number"] {
 .button:hover {
   background-color: black;
   color: white;
+}
+
+span {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

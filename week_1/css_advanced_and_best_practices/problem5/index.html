@@ -27,14 +27,6 @@
                 </div>
             </nav>
         </div>
-        <div class="grid__payment">
-            <div class="flex-container">
-                <h2>Bid For Data Results</h2>
-                <div class="payment-plans plan-1">1600</div>
-                <div class="payment-plans plan-2">1200</div>
-                <p>Payment Include Tax 4%.</p>
-            </div>
-        </div>
         <div class="grid__calc">
             <div class="grid__calc-container">
                 <div class="grid__calc-header">
@@ -43,33 +35,38 @@
                         <option value="property-value">Property Value</option>
                     </select>
                 </div>
-                <div class="grid__calc-form">
-                    <form>
-                        <div class="form-wrapper">
-                            <div class="input-box">
-                                <input type="number" placeholder="Surface Area" name="s-area" required>
-                            </div>
-                            <div class="input-box">
-                                <input type="number" placeholder="Property Price" name="s-area" required>
-                            </div>
-                        </div>
-                        <div class="form-wrapper">
-                            <div class="input-box">
-                                <input type="number" placeholder="Building Area" name="s-area" required>
-                            </div>
-                            <div class="input-box">
-                                <input type="number" placeholder="Down Payment" name="s-area" required>
+                <form class="grid__calc-form">
+                        <input type="number" placeholder="Surface Area" name="s-area" required>
+                        <input type="number" placeholder="Property Price" name="s-area" required>
+                        <input type="number" placeholder="Building Area" name="s-area" required>
+                        <input type="number" placeholder="Down Payment" name="s-area" required>
+                        <input type="number" placeholder="Floor Level" name="s-area" required>
+                        <div class="grid__calc-form-time-period-container">
+                            <h5>Time Period</h5>
+                            <span>4 Years</span>
+                            <div class="light-green-bar-container">
+                                <div class="dark-green-bar"></div>
                             </div>
                         </div>
-                        <div class="form-wrapper">
-                            <div class="input-box">
-                                <input type="number" placeholder="Floor Level" name="s-area" required>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
-    </main>    
+        <div class="grid__payment">
+            <div class="flex-container">
+                <h2>Bid For Data Results</h2>
+                <div class="payment-plans plan-1">
+                    <sup>$</sup>
+                    <span class="price">1,600</span>
+                    <span class="month">/Month</span>
+                </div>
+                <div class="payment-plans plan-2">
+                    <sup>$</sup>
+                    <span class="price">1,200</span>
+                    <span class="month">/Month</span>
+                </div>
+                <p>Payment Include Tax 4%.</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

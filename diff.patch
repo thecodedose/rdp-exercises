@@ -1,0 +1,74 @@
+diff --git a/week_1/css_advanced_and_best_practices/problem5/index.html b/week_1/css_advanced_and_best_practices/problem5/index.html
+index 192c6a8..acf4769 100644
+--- a/week_1/css_advanced_and_best_practices/problem5/index.html
++++ b/week_1/css_advanced_and_best_practices/problem5/index.html
+@@ -43,33 +43,27 @@
+                         <option value="property-value">Property Value</option>
+                     </select>
+                 </div>
+-                <div class="grid__calc-form">
+-                    <form>
+-                        <div class="form-wrapper">
++                <div >
++                    <form class="grid__calc-form">
+                             <div class="input-box">
+                                 <input type="number" placeholder="Surface Area" name="s-area" required>
+                             </div>
+                             <div class="input-box">
+                                 <input type="number" placeholder="Property Price" name="s-area" required>
+                             </div>
+-                        </div>
+-                        <div class="form-wrapper">
+                             <div class="input-box">
+                                 <input type="number" placeholder="Building Area" name="s-area" required>
+                             </div>
+                             <div class="input-box">
+                                 <input type="number" placeholder="Down Payment" name="s-area" required>
+                             </div>
+-                        </div>
+-                        <div class="form-wrapper">
+                             <div class="input-box">
+                                 <input type="number" placeholder="Floor Level" name="s-area" required>
+                             </div>
+-                        </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+-    </main>    
++    </main>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/week_1/css_advanced_and_best_practices/problem5/style.css b/week_1/css_advanced_and_best_practices/problem5/style.css
+index fbfa7c0..b70bf3d 100644
+--- a/week_1/css_advanced_and_best_practices/problem5/style.css
++++ b/week_1/css_advanced_and_best_practices/problem5/style.css
+@@ -79,7 +79,7 @@ h1 {
+ 
+ .grid__calc-header {
+   border: 1px solid black;
+-  
++
+ }
+ 
+ #dropdown {
+@@ -97,7 +97,8 @@ h1 {
+ }
+ 
+ .grid__calc-form {
+-  display: flex;
++  display: grid;
++  grid-template-columns: 1fr 1fr;
+   margin-top: 10px;
+   justify-content: center;
+   align-items: center;
+@@ -145,7 +146,7 @@ input[type="number"] {
+   line-height: 1.2;
+   font-size: 2.1vw;
+   width: 80%;
+-  
++
+ }
+ 
+ .flex-container p {
