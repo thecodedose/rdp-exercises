@@ -1,0 +1,11 @@
+#Button {
+    background-color: red;
+    color: white;
+    padding: 50px 120px;
+    border-radius: 150px;
+    font-size: 60px;
+}
+
+#Button.newState {
+    background-color: black;   
+}
