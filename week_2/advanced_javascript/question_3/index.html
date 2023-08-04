@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6b8b4659e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Option menu</title>
+</head>
+<body>
+    <div class="options-container">
+        <div class="options-box" onclick="toggleMenu()">
+        <span class="options-text">Options</span>
+        <span class="options-arrow"><i class="fa-solid fa-circle-chevron-down fa-xs"></i></span>
+        </div>
+        
+        <div class="options-menu" id="options-menu">
+            <div class="option" onclick="handleOption('edit')"><span class="icon"><i class="fa-solid fa-pen fa-xs"></i></span> Edit</div>
+            <div class="option" onclick="handleOption('duplicate')"><span class="icon"><i class="fa-solid fa-clone fa-xs"></i></span> Duplicate</div>
+            <div class="option" onclick="handleOption('archive')"><span class="icon"><i class="fa-solid fa-box-archive fa-xs"></i></span> Archive</div>       
+            <div class="option" onclick="handleOption('move')"><span class="icon"><i class="fa-solid fa-file-export fa-xs"></i></span> Move</div>
+            <div class="option" onclick="handleOption('delete')"><span class="icon"><i class="fa-solid fa-trash fa-xs"></i></span> Delete</div>    
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
