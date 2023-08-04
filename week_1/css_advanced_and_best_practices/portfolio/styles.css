@@ -1,0 +1,89 @@
+html, body, header, main, section, footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form textarea {
+  resize: vertical;
+}
+form button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #c0392b;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+.project img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
