@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Dropdown Boxes</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box-container" onclick="toggleText(0)">
+      <div class="box">
+        <span class="text">What is your refund policy?</span>
+        <span class="arrow">&#x25B2;</span>
+      </div>
+      <div class="extra-text">If you're unhappy with your purchase for any reason, email us
+        within 90 days and we'll refund you in full, no questions asked.
+      </div>
+    </div>
+    <div class="box-container" onclick="toggleText(1)">
+      <div class="box">
+        <span class="text">Do you offer technical support?</span>
+        <span class="arrow">&#x25B2;</span>
+      </div>
+      <div class="extra-text">No</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body 
+    {
+        /* global 94%+ browsers support */
+        background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    }
+
+
+.container {
+    background-color: white;
+    padding: 1px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 550px;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    width: 500px;
+    background-color: rgb(159, 112, 159);
+    border-radius: 10px;
+}
+
+.text {
+    margin-right: 10px;
+}
+
+.arrow {
+    float: right;
+}
+
+.extra-text {
+    display: none;
+    padding-top: 10px;
+    margin-left: 15px;
+    word-wrap: break-word;
+    width: 520px;
+}
