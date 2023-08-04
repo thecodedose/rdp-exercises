@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="primary">
+        <h1 class="title">
+          <span class="title__text">Calculate The Production</span>
+          <span class="title__text">Property We Can Do</span>
+        </h1>
+        <ul class="category">
+          <li class="category__item"><a href="#">Commercial</a></li>
+          <li class="category__item__selected"><a href="#">Residential</a></li>
+          <li class="category__item">
+            <a href="#">Industry And Development</a>
+          </li>
+          <li class="category__item"><a href="#">Special Purpose</a></li>
+        </ul>
+      </section>
+      <section class="secondary">
+        <section class="calculator">
+          <form action="">
+            <div class="property">
+              <label for="property__type">Calculator Simulation</label>
+              <select name="property__type" id="property__type">
+                <option value="">Property Value</option>
+              </select>
+            </div>
+            <div class="fields">
+              <div class="inputBox">
+                <input type="text" placeholder="Surface Area" />
+                <span class="unit">m<sup>2</sup></span>
+              </div>
+              <div class="inputBox">
+                <input type="text" placeholder="Property Price" />
+                <span class="unit">$</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" placeholder="Building Area" />
+                <span class="unit">m<sup>2</sup></span>
+              </div>
+              <div class="inputBox">
+                <input type="text" placeholder="Down Payment" />
+                <span class="unit">$</span>
+              </div>
+              <div class="inputBox floor">
+                <input type="text" placeholder="Floor Level" />
+                <span class="unit">&nbsp;</span>
+              </div>
+              <div class="inputRange">
+                <label for="range"
+                  ><span>Time Period</span
+                  ><span class="years">4 Years</span></label
+                >
+                <input type="range" name="range" id="range" />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="price">
+          <h2><span>Bid for Data</span><span>Results</span></h2>
+          <p class="price__old">
+            <sup>$</sup><del>1,600</del><span class="per-month">/Month</span>
+          </p>
+          <p class="price__new">
+            <sup>$</sup>1,200<span class="per-month">/Month</span>
+          </p>
+          <p class="price__condition">Payment Include Tax 4%</p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

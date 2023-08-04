@@ -1,0 +1,236 @@
+@import "var";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    align-content: center;
+    min-height: 100vh;  
+    background: linear-gradient($deep-blue, 50%,$blue);
+    padding: 1rem;
+    line-height: 1.6;
+    font-family: $merriweather;
+}
+
+main{
+    height: 100%;
+}
+
+.primary{
+    background-color: $lime;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    margin-bottom: 0.5rem;
+    span{
+        display: block;
+    }
+    h1{
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        font-weight: 800;
+    }
+    @media (min-width: 591.99px){
+        
+        padding: 3rem 5rem;
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    @media (min-width: 780px)
+    {
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    &__item{
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px 5px;
+    }
+    &__item__selected{
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px 5px;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    @media (min-width: 591.99px) {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__item{
+            max-width: 15rem;
+            width: 100%;
+        }
+        &__item__selected{
+            max-width: 15rem;
+            width: 100%;
+        }
+    }
+}
+
+.secondary{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 819.99px) {
+        flex-direction: row;
+    }
+}
+
+.calculator{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    
+    @media (min-width: 820px) {
+        margin-bottom: 0;
+        width: 65%;
+    }
+    @media(min-width: 998px) {
+        width: 70%;
+    }
+    // border-radius: ;
+}
+
+.property{
+    display: flex;
+    justify-content: space-between;
+    label{
+        font-size: 1.25rem;
+    }
+    select{
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+}
+
+.fields{
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    @media (min-width: 700px)
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.inputBox{
+    background-color: $gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 10px;
+    max-width: 20rem;
+    input{
+        width: 90%;
+        font-size: 1rem;
+        background-color: $gray;
+        border: none;
+    }
+    @media (min-width: 700px) {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.inputRange{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+
+    label{
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (min-width: 700px) {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.price{
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 4rem;
+    width: 100%;
+
+    h2{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        span {
+            display: block;
+        }
+    }
+
+    .per-month{
+        font-size: 0.9rem;
+        color: rgba(128, 128, 128, 0.613);
+    }
+
+    &__old{
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    &__new{
+        width: 12rem;
+        padding: 5px 5px;
+        padding-right: 20px;
+        background-color: black;
+        border-radius: 10px;
+        color: $lime;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    &__condition{
+        margin-top: 0.5rem; 
+        font-size: 0.8rem;
+    }
+
+    @media (min-width: 820px) {
+        margin-left: 0.5rem;
+        width: 35%;
+    }
+    @media(min-width: 998px)
+    {
+        width: 30%;
+    }
+    
+}
+
