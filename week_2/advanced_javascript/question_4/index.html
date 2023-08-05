@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>3 Options layout</title>
+</head>
+<body>
+    <div class="nav-menu_container">
+    <div class="navbar">
+        <div class="option" onclick="toggleMenu(0)">Recent</div>
+        <div class="option" onclick="toggleMenu(1)">Popular</div>
+        <div class="option" onclick="toggleMenu(2)">Trending</div>
+    </div>
+    <div class="menu-container">
+        <div class="menu" id="menu0">
+           <div class="blog">
+              <div class="title">Does drinking coffee make you smarter?</div>
+              <div class="details">5h Ago . 5 comments . 2 shares</div>
+           </div>
+           <div class="blog">
+            <div class="title">So you've bought coffee... now what?</div>
+            <div class="details">2h ago . 3 comments . 2 shares</div>
+        </div>
+        </div>
+
+        <div class="menu" id="menu1">
+           <div class="blog">
+            <div class="title">Is tech making coffee better or worse?</div>
+            <div class="details">Jan 7 . 29 comments . 16 shares</div>       
+        </div>
+           <div class="blog">
+            <div class="title">The most innovative things happening in coffee</div>
+            <div class="details">Mar 19 . 24 comments . 13 shares</div>
+        </div>
+        </div>
+
+        <div class="menu" id="menu2">
+           <div class="blog">
+            <div class="title">Ask me anything: 10 answers to your questions about coffee</div>
+            <div class="details">2d ago . 9 comments . 5 shares</div>            
+        </div>
+           <div class="blog">
+            <div class="title">The worst advice we've ever heard about coffee</div>
+            <div class="details">4d ago . 1 comment . 2 shares</div>
+        </div>
+        </div>
+</div> 
+
+    <script src="./script.js"></script>
+</body>
+</html>
