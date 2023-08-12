@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Title - Official Website</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white py-4 text-center">
+      <nav>
+        <ul>
+          <li class="inline-block mr-4">
+            <a href="#about" class="text-white hover:underline">About</a>
+          </li>
+          <li class="inline-block mr-4">
+            <a href="#cast" class="text-white hover:underline">Cast</a>
+          </li>
+          <li class="inline-block mr-4">
+            <a href="#trailer" class="text-white hover:underline">Trailer</a>
+          </li>
+          <li class="inline-block mr-4">
+            <a href="#reviews" class="text-white hover:underline">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="p-8">
+      <section id="hero">
+        <h1 class="text-4xl font-bold">Movie Title</h1>
+        <p class="text-gray-600">Tagline or brief description of the movie.</p>
+        <a
+          href="#trailer"
+          class="bg-red-600 text-white py-2 px-4 rounded-full inline-block mt-4 hover:bg-red-700"
+          >Watch Trailer</a
+        >
+      </section>
+
+      <section id="about" class="mt-8">
+        <h2 class="text-2xl font-bold">About the Movie</h2>
+        <p class="text-gray-600">
+          Provide an overview of the movie's plot and key details.
+        </p>
+        <p class="text-gray-600">Release Date: [Date]</p>
+        <p class="text-gray-600">Director: [Director's Name]</p>
+      </section>
+
+      <section id="cast" class="mt-8">
+        <h2 class="text-2xl font-bold">Cast</h2>
+        <ul>
+          <li class="text-gray-600">Actor 1</li>
+          <li class="text-gray-600">Actor 2</li>
+          <li class="text-gray-600">Actor 3</li>
+          <!-- Add more cast members here -->
+        </ul>
+      </section>
+
+      <section id="trailer" class="mt-8">
+        <h2 class="text-2xl font-bold">Trailer</h2>
+        <iframe
+          class="w-560 h-315"
+          src="https://www.youtube.com/embed/[YouTube Video ID]"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="reviews" class="mt-8">
+        <h2 class="text-2xl font-bold">Reviews</h2>
+        <div class="review">
+          <h3 class="font-bold">Reviewer 1</h3>
+          <p class="text-gray-600">Review content here...</p>
+        </div>
+        <div class="review">
+          <h3 class="font-bold">Reviewer 2</h3>
+          <p class="text-gray-600">Review content here...</p>
+        </div>
+        <!-- Add more reviews here -->
+      </section>
+    </main>
+
+    <footer class="text-center p-4">
+      <p class="text-gray-600">&copy; 2023 Movie Title. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="portfolio-styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Graphic Designer Portfolio</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="about" class="section section--about">
+        <h2 class="section__title">About Me</h2>
+        <p class="section__content">
+          I am a passionate graphic designer with a keen eye for detail and a
+          love for creating visually stunning designs. My goal is to bring ideas
+          to life through innovative and creative design solutions.
+        </p>
+      </section>
+
+      <section id="portfolio" class="section section--portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1" class="project__image" />
+          <h3 class="project__title">Project 1</h3>
+          <p class="project__description">
+            Description of the project goes here...
+          </p>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2" class="project__image" />
+          <h3 class="project__title">Project 2</h3>
+          <p class="project__description">
+            Description of the project goes here...
+          </p>
+        </div>
+        <!-- Add more projects here -->
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <h2 class="section__title">Contact Me</h2>
+        <form class="contact-form">
+          <label for="name" class="contact-form__label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="contact-form__input"
+            required
+          />
+          <label for="email" class="contact-form__label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="contact-form__input"
+            required
+          />
+          <label for="message" class="contact-form__label">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="contact-form__textarea"
+            required
+          ></textarea>
+          <button type="submit" class="contact-form__button">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2023 Graphic Designer Portfolio. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

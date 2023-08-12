@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+        gap: 20px;
+        padding: 20px;
+      }
+
+      @media (max-width: 1024px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr; /* 1 column */
+        }
+      }
+
+      .grid-item {
+        background-color: #ddd;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <title>Responsive Grid Layout</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+    </div>
+  </body>
+</html>
